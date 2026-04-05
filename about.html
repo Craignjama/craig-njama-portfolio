@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Craig Njama</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .cloud {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 shadow-lg">
+        <h1 class="text-3xl font-bold mb-3">Craig Njama - Portfolio</h1>
+        <nav class="flex gap-6 text-lg flex-wrap">
+            <a href="index.html" class="hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition">Home</a>
+            <a href="about.html" class="hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition font-semibold">About</a>
+            <a href="skills.html" class="hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition">Skills</a>
+            <a href="projects.html" class="hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition">Projects</a>
+            <a href="contact.html" class="hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-8">
+        <section class="mb-12">
+            <h2 class="text-4xl font-bold mb-6 text-blue-600">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <img src="tree.jpeg" alt="Portfolio Image" class="rounded-lg shadow-lg object-cover h-80 w-full">
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <p class="text-lg mb-4">Hi, I'm Craig Njama, a creative professional dedicated to delivering excellence across multiple disciplines.</p>
+                    <p class="text-lg mb-4">With expertise in computer hardware and software repair, I ensure systems run smoothly and efficiently. My passion for 3D graphics allows me to bring imaginative visions to life through digital art and design.</p>
+                    <p class="text-lg mb-4">As a skilled video editor, I transform raw footage into compelling visual stories that engage and inspire audiences.</p>
+                    <p class="text-lg">I'm driven by solving technical challenges and creating digital content that makes an impact.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2026 Craig Njama. All rights reserved.</p>
+    </footer>
+</body>
+</html>

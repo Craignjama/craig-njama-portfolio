@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craig Njama - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .cloud {
+            animation: float 6s ease-in-out infinite;
+        }
+        .cloud1 { animation-delay: 0s; }
+        .cloud2 { animation-delay: 2s; }
+        .cloud3 { animation-delay: 4s; }
+        .hero-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+            background-image: url('tree.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .hero-overlay {
+            background: rgba(102, 126, 234, 0.7);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 shadow-lg">
+        <h1 class="text-3xl font-bold mb-3">Craig Njama - Portfolio</h1>
+        <nav class="flex gap-6 text-lg flex-wrap">
+            <a href="index.html" class="hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition font-semibold">Home</a>
+            <a href="about.html" class="hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition">About</a>
+            <a href="skills.html" class="hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition">Skills</a>
+            <a href="projects.html" class="hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition">Projects</a>
+            <a href="contact.html" class="hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition">Contact</a>
+        </nav>
+    </header>
+
+    <main class="hero-bg py-20 relative min-h-screen">
+        <div class="hero-overlay absolute inset-0"></div>
+        
+        <!-- Decorative Clouds -->
+        <svg class="cloud cloud1 absolute top-10 left-10 opacity-70" width="120" height="60" viewBox="0 0 120 60">
+            <path d="M 20 40 Q 10 30 20 20 Q 30 10 50 15 Q 60 5 75 20 Q 90 10 100 25 Q 110 20 110 35 Q 100 45 80 48 Q 60 52 40 50 Q 20 48 20 40 Z" fill="white"/>
+        </svg>
+        <svg class="cloud cloud2 absolute top-32 right-20 opacity-60" width="100" height="50" viewBox="0 0 120 60">
+            <path d="M 20 40 Q 10 30 20 20 Q 30 10 50 15 Q 60 5 75 20 Q 90 10 100 25 Q 110 20 110 35 Q 100 45 80 48 Q 60 52 40 50 Q 20 48 20 40 Z" fill="white"/>
+        </svg>
+        <svg class="cloud cloud3 absolute bottom-20 left-1/4 opacity-50" width="140" height="70" viewBox="0 0 120 60">
+            <path d="M 20 40 Q 10 30 20 20 Q 30 10 50 15 Q 60 5 75 20 Q 90 10 100 25 Q 110 20 110 35 Q 100 45 80 48 Q 60 52 40 50 Q 20 48 20 40 Z" fill="white"/>
+        </svg>
+
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h2 class="text-5xl font-bold text-white mb-4">Welcome to My Portfolio</h2>
+            <p class="text-xl text-gray-100 mb-8">Specializing in Hardware Repair, 3D Graphics & Video Editing</p>
+            <a href="about.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold text-lg hover:bg-gray-100 transition inline-block">Get Started</a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2026 Craig Njama. All rights reserved.</p>
+    </footer>
+</body>
+</html></content>
+<parameter name="filePath">/home/cris/Documents/portfolio/index.html
